@@ -76,10 +76,18 @@ def scan_url(url: str) -> str:
             time.sleep(SLEEP_TIME)
             retries += 1
         else:
-            return json.dumps(results)
+            page_info = results.get("page", {})
+            security_verdicts = results.get("verdicts", {})
+            return json.dumps(
+                {
+                    "url": url,
+                    "page_info": page_info,
+                    "security_verdicts": security_verdicts,
+                }
+            )
 
     return f"Failed to get scan results after {MAX_RETRIES} retries."
 
 
 if __name__ == "__main__":
-    mcp.run(transport='stdio')
+    mcp.run(transport="stdio")
