@@ -7,6 +7,9 @@ _This is not an official `urlscan.io` project!_
   "mcpServers": {
     "URLScan.io": {
       "command": "uv",
+      "env": {
+        "URLSCAN_API_KEY": "xxx"
+      },
       "args": [
         "--directory",
         "/PATH/TO/urlscan-io-mcp-server",
