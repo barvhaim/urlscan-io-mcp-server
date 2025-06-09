@@ -1,0 +1,12 @@
+[project]
+name = "urlscan-io-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "black>=25.1.0",
+    "fastmcp>=2.7.1",
+    "python-dotenv>=1.1.0",
+    "requests>=2.32.4",
+]
