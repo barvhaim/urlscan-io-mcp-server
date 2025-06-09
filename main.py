@@ -79,3 +79,7 @@ def scan_url(url: str) -> str:
             return json.dumps(results)
 
     return f"Failed to get scan results after {MAX_RETRIES} retries."
+
+
+if __name__ == "__main__":
+    mcp.run(transport='stdio')
