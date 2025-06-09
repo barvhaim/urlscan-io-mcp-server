@@ -5,7 +5,7 @@ _This is not an official `urlscan.io` project!_
 ```json
 {
   "mcpServers": {
-    "URLScan.io": {
+    "urlscan_io": {
       "command": "uv",
       "env": {
         "URLSCAN_API_KEY": "xxx"
